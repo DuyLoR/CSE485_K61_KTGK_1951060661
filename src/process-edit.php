@@ -17,6 +17,7 @@ if(!$conn){
     die("Lỗi kết nối");
 }
 $sql = "UPDATE `exams` SET `exam_title`='$exam_title',`exam_datetime`='$exam_datetime',`duration`='$duration',`total_question`='$total_question',`marks_per_right_answer`='$marks_per_right_answer',`created_on`='$created_on',`status`='$status',`exam_code`='$exam_code' WHERE id = '$id'";
+echo $sql;
 $result = mysqli_query($conn,$sql);
 if($result>0){
     header("location:index.php");

@@ -36,56 +36,65 @@
             <div class="mb-3 row">
                 <label for="exam_title" class="col-sm-2 col-form-label">Tên bài thi</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control"value = "<?php echo $row['exam_title']; ?>" name="exam_title">
-                    <input type="hidden" class="form-control"value = "<?php echo $row['id']; ?>" name="id">
+                    <input type="text" class="form-control" value="<?php echo $row['exam_title']; ?>" name="exam_title">
+                    <input type="hidden" class="form-control" value="<?php echo $row['id']; ?>" name="id">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="exam_datetime" class="col-sm-2 col-form-label">Ngày thi</label>
                 <div class="col-sm-10">
-                    <input type="date" class="form-control"value = "<?php echo $row['exam_datetime']; ?>" name="exam_datetime">
+                    <input type="date" class="form-control" value="<?php echo $row['exam_datetime']; ?>"
+                        name="exam_datetime">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="duration" class="col-sm-2 col-form-label">Thời gian làm bài</label>
                 <div class="col-sm-10">
-                    <input type="number" class="form-control"value = "<?php echo $row['duration']; ?>" name="duration">
+                    <input type="number" class="form-control" value="<?php echo $row['duration']; ?>" name="duration">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="total_question" class="col-sm-2 col-form-label">Số câu hỏi</label>
                 <div class="col-sm-10">
-                    <input type="number" class="form-control"value = "<?php echo $row['total_question']; ?>" name="total_question">
+                    <input type="number" class="form-control" value="<?php echo $row['total_question']; ?>"
+                        name="total_question">
                 </div>
             </div>
             <div class="mb-3 row">
-                <label for="marks_per_right_answer" class="col-sm-2 col-form-label">Điểm cho mỗi câu trả lời đúng</label>
+                <label for="marks_per_right_answer" class="col-sm-2 col-form-label">Điểm cho mỗi câu trả lời
+                    đúng</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control"value = "<?php echo $row['marks_per_right_answer']; ?>" name="marks_per_right_answer">
+                    <input type="text" class="form-control" value="<?php echo $row['marks_per_right_answer']; ?>"
+                        name="marks_per_right_answer">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="created_on" class="col-sm-2 col-form-label">Ngày tạo bài thi</label>
                 <div class="col-sm-10">
-                    <input type="date" class="form-control"value = "<?php echo $row['created_on']; ?>" name="created_on">
+                    <input type="date" class="form-control" value="<?php echo $row['created_on']; ?>" name="created_on">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="status" class="col-sm-2 col-form-label">Trạng thái</label>
+            <div class="form-group row">
+                <label for="" class="col-sm-2 col-form-label">Trạng thái</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control"value = "<?php echo $row['status']; ?>" name="status" >
+                    <select name="status">
+                        <option value="Pending">Pending</option>
+                        <option value="Created">Created</option>
+                        <option value="Started">Started</option>
+                        <option value="Completed">Completed</option>
+                    </select>
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="exam_code" class="col-sm-2 col-form-label">Mã truy cập</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control"value = "<?php echo $row['exam_code']; ?>" name="exam_code" >
+                    <input type="number" class="form-control" value="<?php echo $row['exam_code']; ?>" name="exam_code">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="exam_title" class="col-sm-2 col-form-label"></label>
                 <div class="col-sm-10">
-                <button type="submit" class="btn btn-info"  name="btnsubmit">Sửa</button>
+                    <button type="submit" class="btn btn-info" name="btnsubmit">Sửa</button>
                 </div>
             </div>
         </form>

@@ -58,16 +58,22 @@
                     <input type="date" class="form-control"name="created_on">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <label for="status" class="col-sm-2 col-form-label">Trạng thái</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control"name="status" value="pending">
-                </div>
+            <div class="form-group row">
+        <label for="" class="col-sm-2 col-form-label">Trạng thái</label>
+        <div class="col-sm-10">
+            <select name="status">
+                <option value="Pending">Pending</option>
+                <option value="Created">Created</option>
+                <option value="Started">Started</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </div>
+    </div>
             </div>
             <div class="mb-3 row">
                 <label for="exam_code" class="col-sm-2 col-form-label">Mã truy cập</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control"name="exam_code" >
+                    <input type="number" class="form-control"name="exam_code" >
                 </div>
             </div>
             <div class="mb-3 row">
