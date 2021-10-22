@@ -71,6 +71,8 @@
                 ?>
         </table>
         <div class="row"><a href="add.php" class="btn col-md-2 text-white btn-info">Thêm</a></div>
+        <div class="row"><a href="add.php" class="btn col-md-2 text-white btn-info mt-4">Quay lại</a></div>
+
     </div>
 </body>
 
